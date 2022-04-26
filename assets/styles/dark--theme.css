@@ -1,0 +1,14 @@
+:root {
+  --primary--color: #fffaf6;
+}
+.dark--theme {
+  --primary--color: #212222;
+}
+#profile__personal {
+  background-color: var(--primary--color);
+}
+#icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
