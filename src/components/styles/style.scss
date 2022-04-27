@@ -7,10 +7,14 @@
   list-style-type: none;
   text-decoration: none;
 }
+$primary--color: rgba(255, 255, 255, 0.3);
+$secondary--color: rgba(255, 255, 255, 0.6);
 @import "animation";
 @import "header";
 @import "section";
 @import "responsive";
+@import "home";
+@import "hobby";
 #controller {
   background: linear-gradient(45deg, #c8d0ed, #88f0f8);
   padding: 32px;

@@ -1,0 +1,23 @@
+#HobbyPage {
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+}
+.hobby--item {
+  background-color: $secondary--color;
+  border-radius: 24px;
+  @include centerItem();
+  margin-bottom: 24px;
+  padding: 12px 0;
+  .col-xl-4 {
+    @include centerItem();
+  }
+}
+.hobby__img {
+  width: 80%;
+  border-radius: 12px;
+}
+.hobby__text {
+  text-align: justify;
+}
