@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import Product from "./components/Product";
-import Contact from "./components/Hobby";
-import About from "./components/Target";
-import $ from "jquery";
+import Hobby from "./components/Hobby";
+import Target from "./components/Target";
 import "./components/styles/style.css";
 import {
   FaFacebookMessenger,
@@ -16,8 +15,6 @@ import user from "./components/images/user.gif";
 import book from "./components/images/book.gif";
 import heart from "./components/images/heart.gif";
 import target from "./components/images/target.gif";
-import Target from "./components/Target";
-import Hobby from "./components/Hobby";
 const PAGE_HOME = "home";
 const PAGE_HOBBY = "hobby";
 const PAGE_PRODUCT = "product";
@@ -113,28 +110,30 @@ export default function Controller() {
         </div>
       </header>
       <section>
-        <div className="row container-fluid">
-          <div className="col-xl-2 col-lg-2 col-md-12">
-            <div className="sidebar">
-              <div className="sidebar__list">
-                {sidebarList.map((list) => (
-                  <div
-                    className="sidebar__link"
-                    onClick={() => navigateTo(list.page)}
-                  >
-                    <img className="sidebar__img" src={list.image} />
-                    <span>{list.title}</span>
-                  </div>
-                ))}
+        <div className="banner">
+          <div className="row container-fluid">
+            <div className="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+              <div className="sidebar">
+                <div className="sidebar__list">
+                  {sidebarList.map((list) => (
+                    <div
+                      className="sidebar__link"
+                      onClick={() => navigateTo(list.page)}
+                    >
+                      <img className="sidebar__img" src={list.image} />
+                      <span>{list.title}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-xl-10 col-lg-10 col-md-12">
-            <div className="content">
-              {page === PAGE_HOME && <Home />}
-              {page === PAGE_TARGET && <Target />}
-              {page === PAGE_HOBBY && <Hobby />}
-              {page === PAGE_PRODUCT && <Product />}
+            <div className="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+              <div className="content">
+                {page === PAGE_HOME && <Home />}
+                {page === PAGE_TARGET && <Target />}
+                {page === PAGE_HOBBY && <Hobby />}
+                {page === PAGE_PRODUCT && <Product />}
+              </div>
             </div>
           </div>
         </div>

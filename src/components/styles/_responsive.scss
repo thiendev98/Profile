@@ -8,12 +8,64 @@
     display: none;
   }
 }
-@media (min-width: 650px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .col-md-0 {
     display: none;
   }
   .header__name {
     font-size: 28px;
+  }
+  .sidebar {
+    height: 88px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__link {
+      width: 100px;
+      height: 64px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      margin: 12px 0;
+      @include centerItem();
+      flex-direction: column;
+    }
+  }
+  .banner > .row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 650px) and (max-width: 768px) {
+  .col-md-0 {
+    display: none;
+  }
+  .header__name {
+    font-size: 28px;
+  }
+  .sidebar {
+    height: 88px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__link {
+      width: 100px;
+      height: 64px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      margin: 12px 0;
+      @include centerItem();
+      flex-direction: column;
+    }
+  }
+  .banner > .row {
+    flex-direction: column;
   }
 }
 @media (max-width: 650px) and (min-width: 576px) {
@@ -44,6 +96,32 @@
     height: 128px;
     border-radius: 12px;
   }
+  // sidebar
+  .sidebar {
+    height: 76px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__link {
+      width: 80px;
+      height: 52px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      margin: 12px 0;
+      @include centerItem();
+      flex-direction: column;
+    }
+    span {
+      font-size: 13px;
+    }
+  }
+  .banner > .row {
+    flex-direction: column;
+  }
 }
 @media (max-width: 576px) {
   .col-0 {
@@ -51,6 +129,32 @@
   }
   .header .col-xl-2 {
     @include centerItem();
+  }
+  // siide bar
+  .sidebar {
+    height: 64px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__link {
+      width: 60px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      margin: 12px 0;
+      @include centerItem();
+      flex-direction: column;
+    }
+    span {
+      font-size: 11px;
+    }
+  }
+  .banner > .row {
+    flex-direction: column;
   }
 }
 @media (max-width: 390px) {
