@@ -71,7 +71,7 @@ export default function Controller() {
   return (
     <div id="controller">
       <marquee onmouseover="this.stop()" onmouseout="this.start()">
-        Chào mừng bạn đến với Website của tôi...
+        Chào mừng bạn đến với website của mình...
       </marquee>
       <header>
         <div className="header container-fluid">
@@ -113,8 +113,8 @@ export default function Controller() {
         </div>
       </header>
       <section>
-        <div className="row">
-          <div className="col-2">
+        <div className="row container-fluid">
+          <div className="col-xl-2 col-lg-2 col-md-12">
             <div className="sidebar">
               <div className="sidebar__list">
                 {sidebarList.map((list) => (
@@ -129,7 +129,7 @@ export default function Controller() {
               </div>
             </div>
           </div>
-          <div className="col-10">
+          <div className="col-xl-10 col-lg-10 col-md-12">
             <div className="content">
               {page === PAGE_HOME && <Home />}
               {page === PAGE_TARGET && <Target />}

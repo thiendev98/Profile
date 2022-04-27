@@ -2,10 +2,8 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 24px;
   &__list {
-    display: flex;
+    @include centerItem();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__link {
     width: 70%;
@@ -13,10 +11,8 @@
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 12px;
     margin: 12px 0;
-    display: flex;
+    @include centerItem();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__img {
     height: 80%;
