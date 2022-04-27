@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+@import "animation";
+@import "header";
+@import "section";
+#controller {
+  background: linear-gradient(45deg, #c8d0ed, #88f0f8);
+  padding: 30px;
+  letter-spacing: 0.8px;
+}
+marquee {
+  font-size: 20px;
+  letter-spacing: 2px;
+}

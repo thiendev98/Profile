@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@-webkit-keyframes iconFadeIn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes iconFadeIn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  margin: 24px;
+}
+
+.header ul,
+.header li,
+.header p {
+  padding: 0;
+  margin: 0;
+}
+
+.header > .row {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .col-2 {
+  padding-left: 32px;
+}
+
+.header__avatar {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__link {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
+
+.header__name {
+  text-align: center;
+  font-size: 36px;
+  padding-top: 12px;
+  margin-bottom: 0;
+}
+
+.header__about {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.infoList__title {
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.infoList__content {
+  font-size: 16px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  -webkit-animation: iconFadeIn 2s linear infinite;
+          animation: iconFadeIn 2s linear infinite;
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+}
+
+.sidebar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__link {
+  width: 70%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__img {
+  height: 80%;
+  width: 80%;
+  cursor: pointer;
+}
+
+.sidebar__link > span {
+  cursor: pointer;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  height: 400px;
+  padding: 32px;
+}
+
+#controller {
+  background: linear-gradient(45deg, #c8d0ed, #88f0f8);
+  padding: 30px;
+  letter-spacing: 0.8px;
+}
+
+marquee {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */

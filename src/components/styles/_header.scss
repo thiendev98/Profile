@@ -1,0 +1,62 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  margin: 24px;
+  ul,
+  li,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  & > .row {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-2 {
+    padding-left: 32px;
+  }
+  &__avatar {
+    width: 140px;
+    height: 160px;
+    border-radius: 12px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  }
+  &__name {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
+  &__about {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+}
+.infoList__title {
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.infoList__content {
+  font-size: 16px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  animation: iconFadeIn 2s linear infinite;
+}
