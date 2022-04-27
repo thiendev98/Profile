@@ -74,12 +74,13 @@ export default function Controller() {
         Chào mừng bạn đến với Website của tôi...
       </marquee>
       <header>
-        <div className="header">
+        <div className="header container-fluid">
           <div className="row">
-            <div className="col-2">
+            <div className="col-xl-0 col-lg-2 col-md-2 col-sm-1 col-0"></div>
+            <div className="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-12">
               <img className="header__avatar" src={avatar} alt="avatar" />
             </div>
-            <div className="col-4 row">
+            <div className="col-xl-4 col-lg-5 col-md-5 col-sm-7 col-12">
               <h4 className="header__name">Đỗ Hoàng Thiên</h4>
               <p className="header__about">Frontend Developer</p>
               <ul className="header__list">
@@ -97,12 +98,15 @@ export default function Controller() {
                 </li>
               </ul>
             </div>
-            <div className="row col-6">
+            <div className="row col-xl-6 col-lg-12 col-md-12 container-fluid infoList">
               {infoList.map((info) => (
-                <div className="col-6">
-                  <h5 className="infoList__title">{info.title}</h5>
-                  <p className="infoList__content">{info.content}</p>
-                </div>
+                <>
+                  <div className="col-xl-0 col-lg-2 col-md-2 col-sm-1 col-1"></div>
+                  <div className="col-xl-6 col-lg-4 col-md-4 col-sm-11 col-11">
+                    <h5 className="infoList__title">{info.title}</h5>
+                    <p className="infoList__content">{info.content}</p>
+                  </div>
+                </>
               ))}
             </div>
           </div>

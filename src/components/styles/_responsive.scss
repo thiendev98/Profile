@@ -1,0 +1,69 @@
+@media (min-width: 1200px) {
+  .col-xl-0 {
+    display: none;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .col-lg-0 {
+    display: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 992px) {
+  .col-md-0 {
+    display: none;
+  }
+  .header__name {
+    font-size: 28px;
+  }
+}
+@media (max-width: 650px) and (min-width: 576px) {
+  .col-sm-0 {
+    display: none;
+  }
+  .header__name {
+    font-size: 24px;
+  }
+  .header__about {
+    font-size: 15px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    animation: iconFadeIn 2s linear infinite;
+  }
+  .header__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    @include centerItem();
+    box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  }
+  .header__avatar {
+    width: 106px;
+    height: 128px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .col-0 {
+    display: none;
+  }
+  .header .col-xl-2 {
+    @include centerItem();
+  }
+}
+@media (max-width: 390px) {
+  .col-0 {
+    display: none;
+  }
+  .header .col-xl-2 {
+    @include centerItem();
+  }
+  .header__name {
+    font-size: 24px;
+  }
+  .header__about {
+    font-size: 16px;
+  }
+}
