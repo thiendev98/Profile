@@ -68,7 +68,7 @@ export default function Controller() {
   return (
     <div id="controller">
       <marquee onmouseover="this.stop()" onmouseout="this.start()">
-        Chào mừng bạn đến với website của mình...
+        Xin chào bạn! Cảm ơn bạn đã ghé thăm website của mình...
       </marquee>
       <header>
         <div className="header container-fluid">
@@ -81,8 +81,10 @@ export default function Controller() {
               <h4 className="header__name">Đỗ Hoàng Thiên</h4>
               <p className="header__about">Frontend Developer</p>
               <ul className="header__list">
-                <li className="header__link">
-                  <FaFacebook className="icon" />
+                <li className="header__link fb">
+                  <a href="https://www.facebook.com/is2u.tt">
+                    <FaFacebook className="icon" />
+                  </a>
                 </li>
                 <li className="header__link">
                   <FaFacebookMessenger className="icon" />
@@ -90,8 +92,10 @@ export default function Controller() {
                 <li className="header__link">
                   <FaInstagram className="icon" />
                 </li>
-                <li className="header__link">
-                  <FaGithub className="icon" />
+                <li className="header__link git">
+                  <a href="https://github.com/thiendev98">
+                    <FaGithub className="icon" />
+                  </a>
                 </li>
               </ul>
             </div>

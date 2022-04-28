@@ -2,10 +2,53 @@
   .col-xl-0 {
     display: none;
   }
+  #controller {
+    padding: 32px;
+    .header {
+      .row .col-sm-3 {
+        margin-left: 48px;
+      }
+      .row .col-sm-7 {
+        margin-left: -48px;
+      }
+    }
+    .header {
+      .fb {
+        margin-left: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .col-lg-0 {
     display: none;
+  }
+  #controller {
+    padding: 32px;
+    .header {
+      .fb {
+        margin-left: 52px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 52px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
   }
   #HobbyPage {
     .hobby__img {
@@ -15,6 +58,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  #controller {
+    padding: 28px;
+  }
   .col-md-0 {
     display: none;
   }
@@ -53,6 +99,23 @@
   .col-md-0 {
     display: none;
   }
+  #controller {
+    padding: 24px;
+    .header {
+      .fb {
+        margin-left: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
+  }
   marquee {
     font-size: 18px;
   }
@@ -77,6 +140,7 @@
       flex-direction: column;
     }
   }
+
   .banner > .row {
     flex-direction: column;
   }
@@ -99,12 +163,34 @@
     }
   }
 }
+@media (width: 576px) {
+  .header .col-sm-3 {
+    margin-left: 40px;
+  }
+}
 @media (max-width: 650px) and (min-width: 576px) {
   marquee {
     font-size: 18px;
   }
   .col-sm-0 {
     display: none;
+  }
+  #controller {
+    padding: 24px;
+    .header {
+      .fb {
+        margin-left: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 40px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
   }
   .header__name {
     font-size: 26px;
@@ -178,6 +264,23 @@
   .col-0 {
     display: none;
   }
+  #controller {
+    padding: 20px;
+    .header {
+      .fb {
+        margin-left: 32px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 32px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
+  }
   marquee {
     font-size: 16px;
   }
@@ -231,6 +334,23 @@
 @media (max-width: 390px) {
   .col-0 {
     display: none;
+  }
+  #controller {
+    padding: 16px;
+    .header {
+      .fb {
+        margin-left: 12px;
+        :hover {
+          color: inherit;
+        }
+      }
+      .git {
+        margin-right: 12px;
+        :hover {
+          color: inherit;
+        }
+      }
+    }
   }
   marquee {
     font-size: 14px;
