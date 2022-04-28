@@ -27,6 +27,11 @@
       }
     }
   }
+  #ProductPage {
+    .product--item {
+      height: 258px;
+    }
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -92,6 +97,20 @@
     .hobby__img {
       width: 80%;
       height: 120px;
+    }
+  }
+  #ProductPage {
+    .product__img {
+      padding: 0 6px;
+      height: 210px;
+      border-radius: 12px;
+    }
+    .product--item {
+      height: 258px;
+      background-color: $secondary--color;
+      margin-bottom: 12px;
+      padding: 24px 0px;
+      border-radius: 24px;
     }
   }
 }
@@ -330,6 +349,15 @@
       padding: 0px 24px;
     }
   }
+  #ProductPage {
+    .product--item {
+      height: 286px;
+    }
+    .product--title {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
 }
 @media (max-width: 390px) {
   .col-0 {
@@ -363,5 +391,17 @@
   }
   .header__about {
     font-size: 16px;
+  }
+  #ProductPage {
+    .product__img {
+      margin-bottom: 28px;
+    }
+    .product--item {
+      height: 286px;
+    }
+    .product--title {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 }

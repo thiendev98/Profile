@@ -67,7 +67,7 @@ export default function Controller() {
   ];
   return (
     <div id="controller">
-      <marquee onmouseover="this.stop()" onmouseout="this.start()">
+      <marquee>
         Xin chào bạn! Cảm ơn bạn đã ghé thăm website của mình...
       </marquee>
       <header>

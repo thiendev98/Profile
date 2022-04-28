@@ -1,0 +1,32 @@
+#ProductPage {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  .product--title {
+    width: 100%;
+    background-color: $secondary--color;
+    border-radius: 24px;
+    padding: 12px 0px;
+    @include centerItem();
+  }
+  .product__img {
+    padding: 0 6px;
+    height: 210px;
+    border-radius: 12px;
+  }
+  .product--item {
+    background-color: $secondary--color;
+    margin-bottom: 12px;
+    padding: 24px 0px;
+    border-radius: 24px;
+  }
+  .happy--item {
+    @include centerItem();
+    margin-bottom: 12px;
+  }
+  .happy__img {
+    width: 80px;
+    height: 80px;
+  }
+}
