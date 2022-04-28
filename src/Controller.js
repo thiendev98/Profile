@@ -10,11 +10,11 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
-import avatar from "./components/images/avatar.jpg";
-import user from "./components/images/user.gif";
-import book from "./components/images/book.gif";
-import heart from "./components/images/heart.gif";
-import target from "./components/images/target.gif";
+import avatar from "./components/images/icons/avatar.jpg";
+import user from "./components/images/icons/user.gif";
+import book from "./components/images/icons/book.gif";
+import heart from "./components/images/icons/heart.gif";
+import target from "./components/images/icons/target.gif";
 const PAGE_HOME = "home";
 const PAGE_HOBBY = "hobby";
 const PAGE_PRODUCT = "product";

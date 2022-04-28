@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/style.css";
-import books from "./images/books.jpg";
-import it from "./images/it.png";
-import anime from "./images/anime.jpg";
+import books from "./images/icons/books.jpg";
+import it from "./images/icons/it.png";
+import anime from "./images/icons/anime.jpg";
 export default function Hobby() {
   const hobbyList = [
     {
