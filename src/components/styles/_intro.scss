@@ -1,9 +1,9 @@
-#HobbyPage {
+#IntroPage {
   .row {
     margin: 0;
     padding: 0;
   }
-  .hobby--item {
+  .intro--item {
     background-color: $secondary--color;
     border-radius: 24px;
     @include centerItem();
@@ -15,14 +15,10 @@
     cursor: pointer;
     @include shadowBox();
   }
-  .hobby--item:hover {
+  .intro--item:hover {
     transform: translate3d(0, -4px, 0.6px);
   }
-  .hobby__img {
-    border-radius: 12px;
-    box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-  }
-  .hobby__text {
+  .intro__text {
     text-align: justify;
   }
 }

@@ -1,0 +1,65 @@
+#HomePage {
+  overflow: hidden;
+  .row {
+    margin: 0;
+    padding: 0;
+    @include centerItem();
+  }
+  .home__img {
+    width: 430px;
+    height: 430px;
+    background-color: $secondary--color;
+    border-radius: 50%;
+    @include centerItem();
+    img {
+      height: 90%;
+      width: 92%;
+      border-radius: 12px;
+    }
+  }
+  .wapper {
+    @include centerItem();
+    flex-direction: column;
+    h3 {
+      span {
+        font-size: 24px;
+      }
+      .ityped-cursor {
+        animation: blink 0.3s infinite;
+        animation-direction: alternate;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    button {
+      width: 120px;
+      height: 40px;
+      border-radius: 24px;
+      border: 1px solid #fff;
+      @include shadowBox();
+      background: linear-gradient(45deg, #bac4e9, #88f0f8);
+      animation: background-btn linear 3s infinite;
+    }
+    button:hover {
+      transform: translate3d(0, -4px, 0.6px);
+    }
+  }
+  @keyframes background-btn {
+    25% {
+      background: linear-gradient(90deg, #bac4e9, #88f0f8);
+    }
+    50% {
+      background: linear-gradient(180deg, #bac4e9, #88f0f8);
+    }
+    100% {
+      background: linear-gradient(270deg, #bac4e9, #88f0f8);
+    }
+  }
+}

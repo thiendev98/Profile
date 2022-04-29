@@ -3,6 +3,9 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import Hobby from "./components/Hobby";
 import Target from "./components/Target";
+import Intro from "./components/Intro";
+import { loadAnimation } from "lottie-web";
+import { defineLordIconElement } from "lord-icon-element";
 import "./components/styles/style.css";
 import {
   FaFacebookMessenger,
@@ -10,16 +13,13 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
-import avatar from "./components/images/icons/avatar.jpg";
-import user from "./components/images/icons/user.gif";
-import book from "./components/images/icons/book.gif";
-import heart from "./components/images/icons/heart.gif";
-import target from "./components/images/icons/target.gif";
+import avatar from "./components/images/icons/avatar.png";
+defineLordIconElement(loadAnimation);
 const PAGE_HOME = "home";
 const PAGE_HOBBY = "hobby";
 const PAGE_PRODUCT = "product";
 const PAGE_TARGET = "target";
-
+const PAGE_INTRO = "intro";
 export default function Controller() {
   const [page, setPage] = useState(PAGE_HOME);
   const navigateTo = (nextPage) => {
@@ -46,22 +46,22 @@ export default function Controller() {
   const sidebarList = [
     {
       title: "Giới thiệu",
-      image: user,
+      image: "https://cdn.lordicon.com/nobciafz.json",
       page: PAGE_HOME,
     },
     {
       title: "Sở thích",
-      image: heart,
+      image: "https://cdn.lordicon.com/rjzlnunf.json",
       page: PAGE_HOBBY,
     },
     {
       title: "Sản phẩm",
-      image: book,
+      image: "https://cdn.lordicon.com/wxnxiano.json",
       page: PAGE_PRODUCT,
     },
     {
       title: "Mục tiêu",
-      image: target,
+      image: "https://cdn.lordicon.com/iltqorsz.json",
       page: PAGE_TARGET,
     },
   ];
@@ -124,7 +124,12 @@ export default function Controller() {
                       className="sidebar__link"
                       onClick={() => navigateTo(list.page)}
                     >
-                      <img className="sidebar__img" src={list.image} />
+                      <lord-icon
+                        className="sidebar__img"
+                        src={list.image}
+                        trigger="hover"
+                        style={{ width: "240px", height: "240px" }}
+                      ></lord-icon>
                       <span>{list.title}</span>
                     </div>
                   ))}
@@ -133,10 +138,13 @@ export default function Controller() {
             </div>
             <div className="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
               <div className="content">
-                {page === PAGE_HOME && <Home />}
+                {page === PAGE_HOME && (
+                  <Home onClick={() => navigateTo(PAGE_INTRO)} />
+                )}
                 {page === PAGE_TARGET && <Target />}
                 {page === PAGE_HOBBY && <Hobby />}
                 {page === PAGE_PRODUCT && <Product />}
+                {page === PAGE_INTRO && <Intro />}
               </div>
             </div>
           </div>
