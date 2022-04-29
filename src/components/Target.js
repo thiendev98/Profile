@@ -46,7 +46,7 @@ export default function Target() {
 
   return (
     <div id="TargetPage">
-      <h1>Target</h1>
+      <h1>Mục tiêu</h1>
     </div>
   );
 }
