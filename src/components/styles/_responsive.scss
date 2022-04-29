@@ -254,7 +254,7 @@
       flex-direction: column;
     }
     span {
-      font-size: 13px;
+      display: none;
     }
   }
   .banner > .row {
@@ -325,7 +325,7 @@
       flex-direction: column;
     }
     span {
-      font-size: 11px;
+      display: none;
     }
   }
   .banner > .row {
@@ -382,6 +382,11 @@
   }
   marquee {
     font-size: 14px;
+  }
+  .sidebar {
+    span {
+      display: none;
+    }
   }
   .header .col-xl-2 {
     @include centerItem();

@@ -91,6 +91,15 @@
   width: 140px;
   height: 160px;
   border-radius: 12px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
+
+.header__avatar:hover {
+  -webkit-transform: translate3d(0, -4px, 0.6px);
+          transform: translate3d(0, -4px, 0.6px);
 }
 
 .header__list {
@@ -117,6 +126,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
           box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
 }
@@ -125,6 +136,11 @@
   padding: 0;
   margin: 0;
   color: inherit;
+}
+
+.header__link:hover {
+  -webkit-transform: translate3d(0, -4px, 2px);
+          transform: translate3d(0, -4px, 2px);
 }
 
 .header__name {
@@ -216,6 +232,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
+
+.sidebar__link:hover {
+  -webkit-transform: translate3d(0, -4px, 1px);
+          transform: translate3d(0, -4px, 1px);
 }
 
 .sidebar__img {
@@ -225,6 +250,10 @@
 }
 
 .sidebar__link > span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -549,7 +578,7 @@
             flex-direction: column;
   }
   .sidebar span {
-    font-size: 13px;
+    display: none;
   }
   .banner > .row {
     -webkit-box-orient: vertical;
@@ -650,7 +679,7 @@
             flex-direction: column;
   }
   .sidebar span {
-    font-size: 11px;
+    display: none;
   }
   .banner > .row {
     -webkit-box-orient: vertical;
@@ -710,6 +739,9 @@
   marquee {
     font-size: 14px;
   }
+  .sidebar span {
+    display: none;
+  }
   .header .col-xl-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -758,6 +790,11 @@
           align-items: center;
   margin-bottom: 24px;
   padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
 }
 
 .hobby--item .col-xl-4 {
@@ -770,6 +807,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hobby--item:hover {
+  -webkit-transform: translate3d(0, -4px, 0.6px);
+          transform: translate3d(0, -4px, 0.6px);
 }
 
 .hobby__img {
@@ -791,6 +833,10 @@
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 24px;
   padding: 12px 0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,6 +846,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#ProductPage .product--title:hover {
+  -webkit-transform: translate3d(0, -4px, 0.6px);
+          transform: translate3d(0, -4px, 0.6px);
 }
 
 #ProductPage .product__img {
@@ -813,6 +864,15 @@
   margin-bottom: 12px;
   padding: 24px 0px;
   border-radius: 24px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
+
+#ProductPage .product--item:hover {
+  -webkit-transform: translate3d(0, -4px, 0.6px);
+          transform: translate3d(0, -4px, 0.6px);
 }
 
 #ProductPage .happy--item {
@@ -831,6 +891,13 @@
 #ProductPage .happy__img {
   width: 80px;
   height: 80px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#ProductPage .happy__img:hover {
+  -webkit-transform: translate3d(0, -4px, 2px);
+          transform: translate3d(0, -4px, 2px);
 }
 
 #controller {

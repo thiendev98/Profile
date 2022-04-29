@@ -8,7 +8,11 @@
     background-color: $secondary--color;
     border-radius: 24px;
     padding: 12px 0px;
+    @include shadowBox();
     @include centerItem();
+  }
+  .product--title:hover {
+    transform: translate3d(0, -4px, 0.6px);
   }
   .product__img {
     padding: 0 6px;
@@ -20,6 +24,10 @@
     margin-bottom: 12px;
     padding: 24px 0px;
     border-radius: 24px;
+    @include shadowBox();
+  }
+  .product--item:hover {
+    transform: translate3d(0, -4px, 0.6px);
   }
   .happy--item {
     @include centerItem();
@@ -28,5 +36,9 @@
   .happy__img {
     width: 80px;
     height: 80px;
+    transition-duration: 1s;
+  }
+  .happy__img:hover {
+    transform: translate3d(0, -4px, 2px);
   }
 }

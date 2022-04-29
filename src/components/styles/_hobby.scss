@@ -13,6 +13,11 @@
   .col-xl-4 {
     @include centerItem();
   }
+  cursor: pointer;
+  @include shadowBox();
+}
+.hobby--item:hover {
+  transform: translate3d(0, -4px, 0.6px);
 }
 .hobby__img {
   width: 80%;
