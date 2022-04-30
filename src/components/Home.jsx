@@ -8,7 +8,7 @@ export default function Home({ onClick }) {
     init(textRef.current, {
       showCursor: false,
       backDelay: 2000,
-      typeSpeed: 100,
+      typeSpeed: 200,
       strings: ["Sinh viên năm 3", "Frontend developer"],
     });
   }, []);

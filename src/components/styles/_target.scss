@@ -9,6 +9,9 @@
     flex-direction: column;
     @include shadowBox();
     margin-top: 12px;
+    background-image: url("../images/icons/background.png");
+    background-position: center;
+    background-size: cover;
 
     .target__title {
       background-color: $secondary--color;

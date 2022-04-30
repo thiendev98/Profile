@@ -55,30 +55,32 @@
 }
 
 @-webkit-keyframes imageFadeIn {
-  33% {
-    opacity: 1;
-    background-image: url("../images/icons/thien.png");
+  25% {
+    background-image: url("../images/icons/avatar.png");
   }
-  66% {
-    opacity: 1;
+  50% {
     background-image: url("../images/icons/bodoi.png");
   }
-  100% {
+  75% {
+    background-image: url("../images/icons/thien.png");
+  }
+  90% {
     opacity: 1;
     background-image: url("../images/icons/avatar.png");
   }
 }
 
 @keyframes imageFadeIn {
-  33% {
-    opacity: 1;
-    background-image: url("../images/icons/thien.png");
+  25% {
+    background-image: url("../images/icons/avatar.png");
   }
-  66% {
-    opacity: 1;
+  50% {
     background-image: url("../images/icons/bodoi.png");
   }
-  100% {
+  75% {
+    background-image: url("../images/icons/thien.png");
+  }
+  90% {
     opacity: 1;
     background-image: url("../images/icons/avatar.png");
   }
@@ -421,9 +423,10 @@
   }
   #HomePage .wapper h3 {
     padding: 0 26px;
+    font-size: 24px;
   }
   #HomePage .wapper span {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -1302,8 +1305,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: updownImage 1.5s ease-in-out infinite;
-          animation: updownImage 1.5s ease-in-out infinite;
 }
 
 #HomePage .home--images .home__img--item {
@@ -1506,6 +1507,9 @@
   -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
           box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   margin-top: 12px;
+  background-image: url("../images/icons/background.png");
+  background-position: center;
+  background-size: cover;
 }
 
 #TargetPage .target--item .target__title {

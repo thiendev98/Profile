@@ -26,7 +26,6 @@
       background-color: $secondary--color;
       @include shadowBox();
       @include centerItem();
-      animation: updownImage 1.5s ease-in-out infinite;
       &--item {
         width: 92%;
         height: 92%;
