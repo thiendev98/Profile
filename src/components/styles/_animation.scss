@@ -17,17 +17,14 @@
 }
 @keyframes imageFadeIn {
   25% {
-    background-image: url("../images/icons/avatar.png");
-  }
-  50% {
     background-image: url("../images/icons/bodoi.png");
   }
-  75% {
+  50% {
     background-image: url("../images/icons/thien.png");
   }
-  90% {
+  75% {
     opacity: 1;
-    background-image: url("../images/icons/avatar.png");
+    background-image: url("../images/icons/bodoi.png");
   }
 }
 @keyframes updownImage {
