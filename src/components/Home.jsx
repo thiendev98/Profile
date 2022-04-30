@@ -15,8 +15,8 @@ export default function Home({ onClick }) {
   return (
     <div id="HomePage">
       <div className="content__home">
-        <div className="row container-fluid">
-          <div className="col-xl-6 col-lg-6 col-sm-7">
+        <div className="row container-fluid home--item">
+          <div className="col-xl-6 col-lg-6 col-md-6 cod-sm-12 col-12">
             <div className="wapper">
               <h2>Xin chào!!!</h2>
               <h3>
@@ -28,7 +28,7 @@ export default function Home({ onClick }) {
               <button onClick={onClick}>Giới thiệu</button>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-sm-5">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 home--images">
             <div className="home__img">
               <div className="home__img--item"></div>
             </div>

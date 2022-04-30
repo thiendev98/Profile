@@ -1,6 +1,6 @@
 import React from "react";
 export default function Target() {
-  const shorts = [
+  var shorts = [
     {
       key: 1,
       content:
@@ -25,7 +25,7 @@ export default function Target() {
         "Tìm được nơi thực tập phù hợp với bản thân để có thể học hỏi kinh nghiệm từ những anh, chị đi trước",
     },
   ];
-  const longs = [
+  var longs = [
     {
       key: 1,
       content: "Tốt nghiệp đúng hạn",
@@ -43,10 +43,26 @@ export default function Target() {
       content: "Hướng tới mục tiêu trở thành lập trình viên Fullstack",
     },
   ];
-
+  const targets = [
+    {
+      title: "Mục tiêu ngắn hạn",
+      target: shorts,
+    },
+    {
+      title: "Mục tiêu lâu dài",
+      target: longs,
+    },
+  ];
   return (
     <div id="TargetPage">
-      <h1>Mục tiêu</h1>
+      {targets.map((target, index) => (
+        <div className="target--item">
+          <h4 className="target__title">{target.title}</h4>
+          {target.target.map((t) => (
+            <p className="target__content">{t.content}</p>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }

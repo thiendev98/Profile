@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Merriweather", serif;
   list-style-type: none;
   text-decoration: none;
 }
@@ -84,6 +84,60 @@
   }
 }
 
+@-webkit-keyframes updownImage {
+  0% {
+    -webkit-transform: translate3d(0, 0px, 2px);
+            transform: translate3d(0, 0px, 2px);
+  }
+  20% {
+    -webkit-transform: translate3d(0, -1px, 2px);
+            transform: translate3d(0, -1px, 2px);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 0px, 2px);
+            transform: translate3d(0, 0px, 2px);
+  }
+  60% {
+    -webkit-transform: translate3d(0, 1px, 2px);
+            transform: translate3d(0, 1px, 2px);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 2px, 2px);
+            transform: translate3d(0, 2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 1px, 2px);
+            transform: translate3d(0, 1px, 2px);
+  }
+}
+
+@keyframes updownImage {
+  0% {
+    -webkit-transform: translate3d(0, 0px, 2px);
+            transform: translate3d(0, 0px, 2px);
+  }
+  20% {
+    -webkit-transform: translate3d(0, -1px, 2px);
+            transform: translate3d(0, -1px, 2px);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 0px, 2px);
+            transform: translate3d(0, 0px, 2px);
+  }
+  60% {
+    -webkit-transform: translate3d(0, 1px, 2px);
+            transform: translate3d(0, 1px, 2px);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 2px, 2px);
+            transform: translate3d(0, 2px, 2px);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 1px, 2px);
+            transform: translate3d(0, 1px, 2px);
+  }
+}
+
 .header {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 24px;
@@ -122,6 +176,10 @@
 }
 
 .header__avatar {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 140px;
   height: 160px;
   border-radius: 12px;
@@ -210,7 +268,7 @@
 }
 
 .infoList .infoList__content {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .icon {
@@ -308,7 +366,6 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 24px;
   min-height: 496px;
-  padding: 32px;
 }
 
 @media (min-width: 1200px) {
@@ -316,6 +373,9 @@
     display: none;
   }
   #controller {
+    padding: 32px;
+  }
+  #controller .content {
     padding: 32px;
   }
   #controller .header .row .col-sm-3 {
@@ -355,11 +415,15 @@
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
+  #HomePage .home__img {
+    width: 70%;
+    height: 360px;
+  }
   #HomePage .wapper h3 {
-    padding: 0 30px;
+    padding: 0 26px;
   }
   #HomePage .wapper span {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
@@ -368,6 +432,9 @@
     display: none;
   }
   #controller {
+    padding: 32px;
+  }
+  #controller .content {
     padding: 32px;
   }
   #controller .header .fb {
@@ -399,17 +466,41 @@
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
+  #HomePage .home__img {
+    width: 77%;
+    height: 320px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .wapper h2 {
+    font-size: 2em;
+  }
   #HomePage .wapper h3 {
-    font-size: 22px;
-    padding: 0 10px;
+    font-size: 20px;
   }
   #HomePage .wapper span {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   #controller {
+    padding: 28px;
+  }
+  #controller .content {
     padding: 28px;
   }
   .col-md-0 {
@@ -489,6 +580,34 @@
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
+  #HomePage .home__img {
+    width: 74%;
+    height: 320px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .wapper h2 {
+    font-size: 1.5em;
+  }
+  #HomePage .wapper h3 {
+    font-size: 16px;
+  }
+  #HomePage .wapper span {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 768px) {
@@ -496,6 +615,9 @@
     display: none;
   }
   #controller {
+    padding: 24px;
+  }
+  #controller .content {
     padding: 24px;
   }
   #controller .header .fb {
@@ -598,6 +720,47 @@
   #IntroPage .intro__text {
     padding: 0 28px;
   }
+  #HomePage .home--images {
+    margin: 16px 0;
+  }
+  #HomePage .home--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .home__img {
+    width: 50%;
+    height: 300px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 0;
+  }
+  #HomePage .wapper h2 {
+    font-size: 1.5em;
+  }
+  #HomePage .wapper h3 {
+    font-size: 18px;
+  }
+  #HomePage .wapper span {
+    font-size: 21px;
+  }
 }
 
 @media (width: 576px) {
@@ -614,6 +777,9 @@
     display: none;
   }
   #controller {
+    padding: 24px;
+  }
+  #controller .content {
     padding: 24px;
   }
   #controller .header .fb {
@@ -748,6 +914,47 @@
   #IntroPage .intro__text {
     padding: 0 28px;
   }
+  #HomePage .home--images {
+    margin: 16px 0;
+  }
+  #HomePage .home--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .home__img {
+    width: 50%;
+    height: 300px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 0;
+  }
+  #HomePage .wapper h2 {
+    font-size: 1.5em;
+  }
+  #HomePage .wapper h3 {
+    font-size: 18px;
+  }
+  #HomePage .wapper span {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -755,6 +962,9 @@
     display: none;
   }
   #controller {
+    padding: 20px;
+  }
+  #controller .content {
     padding: 20px;
   }
   #controller .header .fb {
@@ -876,6 +1086,53 @@
   #IntroPage .intro__text {
     padding: 0 16px;
   }
+  #TargetPage h4 {
+    font-size: 20px;
+  }
+  .target__content {
+    font-size: 16px;
+  }
+  #HomePage .home--images {
+    margin: 16px 0;
+  }
+  #HomePage .home--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .home__img {
+    width: 60%;
+    height: 240px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 0;
+  }
+  #HomePage .wapper h2 {
+    font-size: 1.5em;
+  }
+  #HomePage .wapper h3 {
+    font-size: 18px;
+  }
+  #HomePage .wapper span {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -883,6 +1140,9 @@
     display: none;
   }
   #controller {
+    padding: 16px;
+  }
+  #controller .content {
     padding: 16px;
   }
   #controller .header .fb {
@@ -930,6 +1190,53 @@
     font-size: 16px;
     text-align: center;
   }
+  #TargetPage h4 {
+    font-size: 16px;
+  }
+  #TargetPage .target__content {
+    font-size: 14px;
+  }
+  #HomePage .home--images {
+    margin: 16px 0;
+  }
+  #HomePage .home--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #HomePage .home__img {
+    width: 60%;
+    height: 200px;
+  }
+  #HomePage .wapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 0;
+  }
+  #HomePage .wapper h2 {
+    font-size: 1.5em;
+  }
+  #HomePage .wapper h3 {
+    font-size: 14px;
+  }
+  #HomePage .wapper span {
+    font-size: 17px;
+  }
 }
 
 #HomePage {
@@ -941,6 +1248,16 @@
   background-image: url("../images/icons/background.png");
   background-size: cover;
   background-position: center;
+  min-height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #HomePage .row {
@@ -957,14 +1274,7 @@
           align-items: center;
 }
 
-#HomePage .home__img {
-  width: 360px;
-  height: 400px;
-  margin: 16px 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 24px;
-  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+#HomePage .home--images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,21 +1286,40 @@
           align-items: center;
 }
 
-#HomePage .home__img .home__img--item {
-  width: 320px;
-  height: 360px;
+#HomePage .home--images .home__img {
+  border-radius: 18px;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 24px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
           box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: updownImage 1.5s ease-in-out infinite;
+          animation: updownImage 1.5s ease-in-out infinite;
+}
+
+#HomePage .home--images .home__img--item {
+  width: 92%;
+  height: 92%;
   background-image: url("../images/icons/thien.png");
-  background-size: cover;
+  -webkit-animation: imageFadeIn 24s ease-in infinite;
+          animation: imageFadeIn 24s ease-in infinite;
   background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
 }
 
 #HomePage .wapper {
-  font-family: "Merriweather", serif;
   font-weight: 400;
 }
 
@@ -1150,6 +1479,74 @@
 
 #HobbyPage .hobby__text {
   text-align: justify;
+}
+
+#TargetPage p {
+  padding: 0;
+  margin: 0;
+}
+
+#TargetPage .target--item {
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  margin-top: 12px;
+}
+
+#TargetPage .target--item .target__title {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  width: 94%;
+  padding: 12px;
+  margin-top: 24px;
+  border-radius: 12px;
+  text-align: justify;
+}
+
+#TargetPage .target--item .target__content {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 94%;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 6px 24px;
+  text-align: justify;
+}
+
+#TargetPage .target__content:hover,
+#TargetPage .target__title:hover {
+  -webkit-transform: translate3d(0, -4px, 0.6px);
+          transform: translate3d(0, -4px, 0.6px);
 }
 
 #ProductPage .row {

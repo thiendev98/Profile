@@ -23,6 +23,7 @@
     @include centerItem();
   }
   &__avatar {
+    user-select: none;
     width: 140px;
     height: 160px;
     border-radius: 12px;
@@ -80,7 +81,7 @@
     user-select: none;
   }
   .infoList__content {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .icon {

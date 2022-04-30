@@ -1,2 +1,37 @@
 #TargetPage {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .target--item {
+    border-radius: 24px;
+    @include centerItem();
+    flex-direction: column;
+    @include shadowBox();
+    margin-top: 12px;
+
+    .target__title {
+      background-color: $secondary--color;
+      @include centerItem();
+      @include shadowBox();
+      width: 94%;
+      padding: 12px;
+      margin-top: 24px;
+      border-radius: 12px;
+      text-align: justify;
+    }
+    .target__content {
+      @include shadowBox();
+      background-color: $secondary--color;
+      width: 94%;
+      border-radius: 12px;
+      margin: 12px;
+      padding: 6px 24px;
+      text-align: justify;
+    }
+  }
+  .target__content:hover,
+  .target__title:hover {
+    transform: translate3d(0, -4px, 0.6px);
+  }
 }

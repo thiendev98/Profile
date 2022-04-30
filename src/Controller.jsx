@@ -129,8 +129,8 @@ export default function Controller() {
                         src={list.image}
                         trigger="hover"
                         style={{
-                          width: "240px",
-                          height: "240px",
+                          width: "90%",
+                          height: "90%",
                           cursor: "pointer",
                         }}
                       ></lord-icon>

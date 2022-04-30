@@ -3,6 +3,7 @@
   border-radius: 24px;
   box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
 }
+
 #HomePage {
   overflow: hidden;
   .content__home {
@@ -10,30 +11,36 @@
     background-image: url("../images/icons/background.png");
     background-size: cover;
     background-position: center;
+    min-height: 430px;
+    @include centerItem();
   }
   .row {
     margin: 0;
     padding: 0;
     @include centerItem();
   }
-  .home__img {
-    width: 360px;
-    height: 400px;
-    margin: 16px 0;
-    @include imageHome();
+  .home--images {
     @include centerItem();
-    .home__img--item {
-      width: 320px;
-      height: 360px;
-      @include imageHome();
-      border-radius: 20px;
-      background-image: url("../images/icons/thien.png");
-      background-size: cover;
-      background-position: center;
+    .home__img {
+      border-radius: 18px;
+      background-color: $secondary--color;
+      @include shadowBox();
+      @include centerItem();
+      animation: updownImage 1.5s ease-in-out infinite;
+      &--item {
+        width: 92%;
+        height: 92%;
+        background-image: url("../images/icons/thien.png");
+        animation: imageFadeIn 24s ease-in infinite;
+        background-position: center;
+        background-size: cover;
+        border-radius: 12px;
+        box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+      }
     }
   }
+
   .wapper {
-    font-family: "Merriweather", serif;
     font-weight: 400;
     h2 {
       text-align: center;

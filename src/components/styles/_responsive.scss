@@ -4,6 +4,9 @@
   }
   #controller {
     padding: 32px;
+    .content {
+      padding: 32px;
+    }
     .header {
       .row .col-sm-3 {
         margin-left: 48px;
@@ -52,12 +55,16 @@
     }
   }
   #HomePage {
+    .home__img {
+      width: 70%;
+      height: 360px;
+    }
     .wapper {
       h3 {
-        padding: 0 30px;
+        padding: 0 26px;
       }
       span {
-        font-size: 25px;
+        font-size: 24px;
       }
     }
   }
@@ -69,6 +76,9 @@
   }
   #controller {
     padding: 32px;
+    .content {
+      padding: 32px;
+    }
     .header {
       .fb {
         margin-left: 52px;
@@ -105,13 +115,21 @@
     }
   }
   #HomePage {
+    .home__img {
+      width: 77%;
+      height: 320px;
+    }
     .wapper {
+      @include centerItem();
+      flex-direction: column;
+      h2 {
+        font-size: 2em;
+      }
       h3 {
-        font-size: 22px;
-        padding: 0 10px;
+        font-size: 20px;
       }
       span {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
   }
@@ -119,6 +137,9 @@
 @media (min-width: 768px) and (max-width: 992px) {
   #controller {
     padding: 28px;
+    .content {
+      padding: 28px;
+    }
   }
   .col-md-0 {
     display: none;
@@ -181,6 +202,25 @@
       box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
     }
   }
+  #HomePage {
+    .home__img {
+      width: 74%;
+      height: 320px;
+    }
+    .wapper {
+      @include centerItem();
+      flex-direction: column;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+  }
 }
 @media (min-width: 650px) and (max-width: 768px) {
   .col-md-0 {
@@ -188,6 +228,9 @@
   }
   #controller {
     padding: 24px;
+    .content {
+      padding: 24px;
+    }
     .header {
       .fb {
         margin-left: 40px;
@@ -265,6 +308,34 @@
       padding: 0 28px;
     }
   }
+  #HomePage {
+    .home--images {
+      margin: 16px 0;
+    }
+    .home--item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home__img {
+      width: 50%;
+      height: 300px;
+    }
+    .wapper {
+      @include centerItem();
+      flex-direction: column;
+      padding: 12px 0;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      span {
+        font-size: 21px;
+      }
+    }
+  }
 }
 @media (width: 576px) {
   .header .col-sm-3 {
@@ -280,6 +351,9 @@
   }
   #controller {
     padding: 24px;
+    .content {
+      padding: 24px;
+    }
     .header {
       .fb {
         margin-left: 40px;
@@ -379,6 +453,34 @@
       padding: 0 28px;
     }
   }
+  #HomePage {
+    .home--images {
+      margin: 16px 0;
+    }
+    .home--item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home__img {
+      width: 50%;
+      height: 300px;
+    }
+    .wapper {
+      @include centerItem();
+      flex-direction: column;
+      padding: 12px 0;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      span {
+        font-size: 21px;
+      }
+    }
+  }
 }
 @media (max-width: 576px) {
   .col-0 {
@@ -386,6 +488,9 @@
   }
   #controller {
     padding: 20px;
+    .content {
+      padding: 20px;
+    }
     .header {
       .fb {
         margin-left: 32px;
@@ -407,7 +512,7 @@
   .header .col-xl-2 {
     @include centerItem();
   }
-  // siide bar
+  // side bar
   .sidebar {
     height: 64px;
     margin-bottom: 24px;
@@ -476,6 +581,42 @@
       padding: 0 16px;
     }
   }
+  #TargetPage {
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .target__content {
+    font-size: 16px;
+  }
+  #HomePage {
+    .home--images {
+      margin: 16px 0;
+    }
+    .home--item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home__img {
+      width: 60%;
+      height: 240px;
+    }
+    .wapper {
+      @include centerItem();
+      flex-direction: column;
+      padding: 12px 0;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      span {
+        font-size: 21px;
+      }
+    }
+  }
 }
 @media (max-width: 390px) {
   .col-0 {
@@ -483,6 +624,10 @@
   }
   #controller {
     padding: 16px;
+
+    .content {
+      padding: 16px;
+    }
     .header {
       .fb {
         margin-left: 12px;
@@ -525,6 +670,42 @@
     .product--title {
       font-size: 16px;
       text-align: center;
+    }
+  }
+  #TargetPage {
+    h4 {
+      font-size: 16px;
+    }
+    .target__content {
+      font-size: 14px;
+    }
+  }
+  #HomePage {
+    .home--images {
+      margin: 16px 0;
+    }
+    .home--item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home__img {
+      width: 60%;
+      height: 200px;
+    }
+    .wapper {
+      @include centerItem();
+      flex-direction: column;
+      padding: 12px 0;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      span {
+        font-size: 17px;
+      }
     }
   }
 }
