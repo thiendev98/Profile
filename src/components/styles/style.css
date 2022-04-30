@@ -56,9 +56,11 @@
 
 @-webkit-keyframes imageFadeIn {
   25% {
+    opacity: 1;
     background-image: url("../images/icons/bodoi.png");
   }
   50% {
+    opacity: 1;
     background-image: url("../images/icons/thien.png");
   }
   75% {
@@ -69,9 +71,11 @@
 
 @keyframes imageFadeIn {
   25% {
+    opacity: 1;
     background-image: url("../images/icons/bodoi.png");
   }
   50% {
+    opacity: 1;
     background-image: url("../images/icons/thien.png");
   }
   75% {
@@ -1305,8 +1309,9 @@
   width: 92%;
   height: 92%;
   background-image: url("../images/icons/thien.png");
-  -webkit-animation: imageFadeIn 16s ease-in infinite;
-          animation: imageFadeIn 16s ease-in infinite;
+  opacity: 1;
+  -webkit-animation: imageFadeIn 20s ease-in infinite;
+          animation: imageFadeIn 20s ease-in infinite;
   background-position: center;
   background-size: cover;
   border-radius: 12px;
