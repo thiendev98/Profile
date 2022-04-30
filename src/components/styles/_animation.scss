@@ -15,3 +15,17 @@
     transform: scale(1);
   }
 }
+@keyframes imageFadeIn {
+  33% {
+    opacity: 1;
+    background-image: url("../images/icons/thien.png");
+  }
+  66% {
+    opacity: 1;
+    background-image: url("../images/icons/bodoi.png");
+  }
+  100% {
+    opacity: 1;
+    background-image: url("../images/icons/avatar.png");
+  }
+}

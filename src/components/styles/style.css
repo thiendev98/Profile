@@ -54,6 +54,36 @@
   }
 }
 
+@-webkit-keyframes imageFadeIn {
+  33% {
+    opacity: 1;
+    background-image: url("../images/icons/thien.png");
+  }
+  66% {
+    opacity: 1;
+    background-image: url("../images/icons/bodoi.png");
+  }
+  100% {
+    opacity: 1;
+    background-image: url("../images/icons/avatar.png");
+  }
+}
+
+@keyframes imageFadeIn {
+  33% {
+    opacity: 1;
+    background-image: url("../images/icons/thien.png");
+  }
+  66% {
+    opacity: 1;
+    background-image: url("../images/icons/bodoi.png");
+  }
+  100% {
+    opacity: 1;
+    background-image: url("../images/icons/avatar.png");
+  }
+}
+
 .header {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 24px;
@@ -325,6 +355,12 @@
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
+  #HomePage .wapper h3 {
+    padding: 0 30px;
+  }
+  #HomePage .wapper span {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -362,6 +398,13 @@
     border-radius: 16px;
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  }
+  #HomePage .wapper h3 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+  #HomePage .wapper span {
+    font-size: 22px;
   }
 }
 
@@ -893,6 +936,13 @@
   overflow: hidden;
 }
 
+#HomePage .content__home {
+  border-radius: 24px;
+  background-image: url("../images/icons/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
 #HomePage .row {
   margin: 0;
   padding: 0;
@@ -908,10 +958,13 @@
 }
 
 #HomePage .home__img {
-  width: 430px;
-  height: 430px;
+  width: 360px;
+  height: 400px;
+  margin: 16px 0;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,30 +976,39 @@
           align-items: center;
 }
 
-#HomePage .home__img img {
-  height: 90%;
-  width: 92%;
-  border-radius: 12px;
+#HomePage .home__img .home__img--item {
+  width: 320px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+  border-radius: 20px;
+  background-image: url("../images/icons/thien.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #HomePage .wapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+#HomePage .wapper h2 {
+  text-align: center;
+}
+
+#HomePage .wapper h3 {
+  margin-left: 20px;
 }
 
 #HomePage .wapper h3 span {
-  font-size: 24px;
+  margin-left: 12px;
+  color: #a0b0ea;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #HomePage .wapper h3 .ityped-cursor {
@@ -974,9 +1036,23 @@
   }
 }
 
-#HomePage .wapper button {
-  width: 120px;
+#HomePage .button-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#HomePage .button-btn button {
+  width: 150px;
   height: 40px;
+  font-size: 20px;
+  font-weight: 500;
   border-radius: 24px;
   border: 1px solid #fff;
   -webkit-transition-duration: 1s;
@@ -988,7 +1064,7 @@
           animation: background-btn linear 3s infinite;
 }
 
-#HomePage .wapper button:hover {
+#HomePage .button-btn button:hover {
   -webkit-transform: translate3d(0, -4px, 0.6px);
           transform: translate3d(0, -4px, 0.6px);
 }

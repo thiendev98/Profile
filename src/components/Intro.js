@@ -1,6 +1,6 @@
 import React from "react";
 import bkhcm from "./images/icons/bkhcm.png";
-import thien from "./images/icons/thien.png";
+import bodoi from "./images/icons/bodoi.png";
 import thpt from "./images/icons/thpt.png";
 import "./styles/style.css";
 export default function Intro() {
@@ -8,10 +8,10 @@ export default function Intro() {
     {
       img: thpt,
       time: "07/2016",
-      text: "Thi tốt nghiệp cấp 3 xong do không thực sự đam mê nghành học nào nên mình quyết định không học Đại học.",
+      text: "Thi tốt nghiệp cấp 3 xong do không thực sự đam mê ngành học nào nên mình quyết định không học Đại học.",
     },
     {
-      img: thien,
+      img: bodoi,
       time: "12/02/2017 - 19/01/2019",
       text: "Tình nguyện nhập ngũ để rèn luyện bản thân tại Đại đội 15, Trung đoàn BB1, Sư đoàn 330, Quân khu 9 tại Chi Lăng - An Giang. Được nhận bằng khen 'Chiến sĩ tiên tiến' nhờ hoàn thành tốt nhiệm vụ được giao.",
     },

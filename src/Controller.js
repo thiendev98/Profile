@@ -128,7 +128,11 @@ export default function Controller() {
                         className="sidebar__img"
                         src={list.image}
                         trigger="hover"
-                        style={{ width: "240px", height: "240px" }}
+                        style={{
+                          width: "240px",
+                          height: "240px",
+                          cursor: "pointer",
+                        }}
                       ></lord-icon>
                       <span>{list.title}</span>
                     </div>

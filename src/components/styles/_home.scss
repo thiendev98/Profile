@@ -1,28 +1,50 @@
+@mixin imageHome {
+  background-color: $secondary--color;
+  border-radius: 24px;
+  box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
+}
 #HomePage {
   overflow: hidden;
+  .content__home {
+    border-radius: 24px;
+    background-image: url("../images/icons/background.png");
+    background-size: cover;
+    background-position: center;
+  }
   .row {
     margin: 0;
     padding: 0;
     @include centerItem();
   }
   .home__img {
-    width: 430px;
-    height: 430px;
-    background-color: $secondary--color;
-    border-radius: 50%;
+    width: 360px;
+    height: 400px;
+    margin: 16px 0;
+    @include imageHome();
     @include centerItem();
-    img {
-      height: 90%;
-      width: 92%;
-      border-radius: 12px;
+    .home__img--item {
+      width: 320px;
+      height: 360px;
+      @include imageHome();
+      border-radius: 20px;
+      background-image: url("../images/icons/thien.png");
+      background-size: cover;
+      background-position: center;
     }
   }
   .wapper {
-    @include centerItem();
-    flex-direction: column;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    h2 {
+      text-align: center;
+    }
     h3 {
+      margin-left: 20px;
       span {
-        font-size: 24px;
+        margin-left: 12px;
+
+        color: $font-color;
+        user-select: none;
       }
       .ityped-cursor {
         animation: blink 0.3s infinite;
@@ -37,10 +59,14 @@
         }
       }
     }
-
+  }
+  .button-btn {
+    @include centerItem();
     button {
-      width: 120px;
+      width: 150px;
       height: 40px;
+      font-size: 20px;
+      font-weight: 500;
       border-radius: 24px;
       border: 1px solid #fff;
       @include shadowBox();
