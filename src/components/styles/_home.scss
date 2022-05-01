@@ -31,7 +31,7 @@
         height: 92%;
         background-image: url("../images/icons/thien.png");
         opacity: 1;
-        animation: imageFadeIn 20s ease-in infinite;
+        animation: imageFadeIn 20s linear infinite;
         background-position: center;
         background-size: cover;
         border-radius: 12px;

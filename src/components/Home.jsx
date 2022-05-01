@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
-import thien from "./images/icons/thien.png";
 import "./styles/style.css";
 export default function Home({ onClick }) {
   const textRef = useRef();
