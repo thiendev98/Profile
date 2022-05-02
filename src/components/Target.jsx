@@ -4,43 +4,39 @@ export default function Target() {
     {
       key: 1,
       content:
-        "Rèn luyện bản thân, tích cực học tập, tham gia các hoạt động phong trào do trường, khoa tổ chức",
+        "Rèn luyện bản thân, tích cực học tập, tham gia các hoạt động phong trào do trường, khoa tổ chức.",
     },
     {
       key: 2,
-      content: "Cũng cố các kiến thức nền tảng về HTML, CSS, JavaScript",
+      content: "Cũng cố các kiến thức nền tảng về HTML, CSS, JavaScript.",
     },
     {
       key: 3,
-      content: "Tìm hiểu thêm kiến thức nâng cao về HTML, CSS, JavaScript",
+      content: "Tìm hiểu thêm kiến thức nâng cao về HTML, CSS, JavaScript.",
     },
     {
       key: 4,
       content:
-        "Ôn tập, tìm hiểu thêm các tính năng của Bootstrap, Jquery, ReactJS",
+        "Ôn tập, tìm hiểu thêm các tính năng của Bootstrap, Jquery, ReactJS.",
     },
     {
       key: 5,
       content:
-        "Tìm được nơi thực tập phù hợp với bản thân để có thể học hỏi kinh nghiệm từ những anh, chị đi trước",
+        "Tìm được nơi thực tập phù hợp với bản thân để có thể học hỏi kinh nghiệm từ những anh, chị đi trước.",
     },
   ];
   var longs = [
     {
       key: 1,
-      content: "Tốt nghiệp đúng hạn",
+      content: "Học cách sử dụng nền tảng (Platform) Nodejs.",
     },
     {
       key: 2,
-      content: "Học cách sử dụng nền tảng (Platform) Nodejs",
+      content: "Ôn tập, tìm hiểu thêm kiến về ngôn ngữ PHP.",
     },
     {
       key: 3,
-      content: "Ôn tập, tìm hiểu thêm kiến về ngôn ngữ PHP",
-    },
-    {
-      key: 4,
-      content: "Hướng tới mục tiêu trở thành lập trình viên Fullstack",
+      content: "Hướng tới mục tiêu trở thành lập trình viên Fullstack.",
     },
   ];
   const targets = [
