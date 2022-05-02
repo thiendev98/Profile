@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "react-slick";
 import POSList from "./DataPOS";
 import PetList from "./DataPet";
