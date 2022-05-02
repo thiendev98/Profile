@@ -432,11 +432,12 @@
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
   #HomePage .home__img {
-    width: 70%;
+    width: 72%;
     height: 360px;
   }
   #HomePage .wapper h3 {
-    padding: 0 26px;
+    margin-left: 20px;
+    padding: 0 20px;
     font-size: 24px;
   }
   #HomePage .wapper span {
@@ -477,8 +478,8 @@
     padding-right: 36px;
   }
   #IntroPage .intro__img {
-    width: 64%;
-    height: 140px;
+    width: 72%;
+    height: 160px;
     border-radius: 16px;
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
@@ -506,10 +507,10 @@
     font-size: 2em;
   }
   #HomePage .wapper h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   #HomePage .wapper span {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
@@ -591,7 +592,7 @@
     padding-right: 28px;
   }
   #IntroPage .intro__img {
-    width: 64%;
+    width: 72%;
     height: 140px;
     border-radius: 12px;
     -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
@@ -922,7 +923,7 @@
   }
   #IntroPage .intro__img {
     padding: 12px 0 6px 0;
-    width: 42%;
+    width: 45%;
     height: 164px;
   }
   #IntroPage .intro__title {
@@ -1094,7 +1095,7 @@
   }
   #IntroPage .intro__img {
     padding: 12px 0 6px 0;
-    width: 42%;
+    width: 50%;
     height: 172px;
   }
   #IntroPage .intro__title {
@@ -1145,10 +1146,10 @@
     font-size: 1.5em;
   }
   #HomePage .wapper h3 {
-    font-size: 18px;
+    font-size: 17px;
   }
   #HomePage .wapper span {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -1343,12 +1344,9 @@
   text-align: center;
 }
 
-#HomePage .wapper h3 {
-  margin-left: 20px;
-}
-
 #HomePage .wapper h3 span {
-  margin-left: 12px;
+  margin-left: 8px;
+  font-weight: 600;
   color: #a0b0ea;
   -webkit-user-select: none;
      -moz-user-select: none;

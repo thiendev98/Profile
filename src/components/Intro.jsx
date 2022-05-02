@@ -27,10 +27,10 @@ export default function Intro() {
       <div className="row container-fluid">
         {introList.map((intro) => (
           <div className="intro--item">
-            <div className="col-xl-4 col-lg-3 col-md-4 col-sm-12 col-12">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <img className="intro__img" src={intro.img} />
             </div>
-            <div className="col-xl-8 col-lg-9 col-md-8 col-sm-12 col-12">
+            <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <h4 className="intro__title">{intro.time}</h4>
               <p className="intro__text">{intro.text}</p>
             </div>
