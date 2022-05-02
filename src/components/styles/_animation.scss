@@ -16,19 +16,11 @@
   }
 }
 @keyframes imageFadeIn {
-  20% {
+  33% {
     opacity: 1;
     background-image: url("../images/icons/bodoi.png");
   }
-  40% {
-    opacity: 1;
-    background-image: url("../images/icons/thien.png");
-  }
-  60% {
-    opacity: 1;
-    background-image: url("../images/icons/bodoi.png");
-  }
-  80% {
+  66% {
     opacity: 1;
     background-image: url("../images/icons/thien.png");
   }
