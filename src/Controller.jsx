@@ -13,7 +13,7 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
-import anhthe from "./components/images/icons/anhthe.jpg";
+import thien from "./components/images/icons/thien.png";
 defineLordIconElement(loadAnimation);
 const PAGE_HOME = "home";
 const PAGE_HOBBY = "hobby";
@@ -75,7 +75,7 @@ export default function Controller() {
           <div className="row">
             <div className="col-xl-0 col-lg-2 col-md-2 col-sm-1 col-0"></div>
             <div className="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-12">
-              <img className="header__avatar" src={anhthe} alt="avatar" />
+              <img className="header__avatar" src={thien} alt="avatar" />
             </div>
             <div className="col-xl-4 col-lg-5 col-md-5 col-sm-7 col-12">
               <h4 className="header__name">Đỗ Hoàng Thiên</h4>
