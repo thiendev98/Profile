@@ -1331,7 +1331,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   padding: 12px 0;
   cursor: pointer;
   -webkit-transition-duration: 1s;
@@ -1365,6 +1365,26 @@
 
 #HobbyPage .hobby__text {
   text-align: justify;
+}
+
+#HobbyPage .happy--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+
+#HobbyPage .happy__img {
+  width: 32px;
+  height: 32px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 #TargetPage p {
@@ -1504,10 +1524,11 @@
 }
 
 #ProductPage .happy__img {
-  width: 80px;
-  height: 80px;
+  width: 52px;
+  height: 52px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  margin: 0 6px;
 }
 
 #ProductPage .happy__img:hover {
@@ -1532,7 +1553,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   padding: 12px 0;
   cursor: pointer;
   -webkit-transition-duration: 1s;
@@ -1560,6 +1581,26 @@
 
 #IntroPage .intro__text {
   text-align: justify;
+}
+
+#IntroPage .happy--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+
+#IntroPage .happy__img {
+  width: 40px;
+  height: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 #controller {

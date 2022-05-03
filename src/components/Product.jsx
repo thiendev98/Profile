@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import POSList from "./DataPOS";
 import PetList from "./DataPet";
-import happy from "./images/icons/happy.gif";
+import book from "./images/icons/book-item.gif";
 import "./styles/style.css";
 export default function Product() {
   const settings = {
@@ -49,18 +49,18 @@ export default function Product() {
       },
     ],
   };
-  const listHappy = [
+  const listBook = [
     {
-      title: "Happy",
-      img: happy,
+      title: "Book",
+      img: book,
     },
     {
-      title: "Happy",
-      img: happy,
+      title: "Book",
+      img: book,
     },
     {
-      title: "Happy",
-      img: happy,
+      title: "Book",
+      img: book,
     },
   ];
   const listProducts = [
@@ -88,8 +88,8 @@ export default function Product() {
             </Slider>
           </div>
           <div className="happy--item">
-            {listHappy.map((happy) => (
-              <img className="happy__img" src={happy.img} />
+            {listBook.map((book) => (
+              <img className="happy__img" src={book.img} />
             ))}
           </div>
         </>

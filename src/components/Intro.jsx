@@ -2,6 +2,7 @@ import React from "react";
 import bkhcm from "./images/icons/bkhcm.png";
 import spg9 from "./images/icons/spg9.jpg";
 import thpt from "./images/icons/thpt.png";
+import arrow from "./images/icons/arrow.gif";
 import "./styles/style.css";
 export default function Intro() {
   const introList = [
@@ -21,20 +22,48 @@ export default function Intro() {
       text: "Nhập học ngành Khoa học máy tính tại trường Đại học Bách Khoa - ĐHQG TP.HCM.",
     },
   ];
-
+  const listArrow = [
+    {
+      title: "Arrow",
+      img: arrow,
+    },
+    {
+      title: "Arrow",
+      img: arrow,
+    },
+    {
+      title: "Arrow",
+      img: arrow,
+    },
+    {
+      title: "Arrow",
+      img: arrow,
+    },
+    {
+      title: "Arrow",
+      img: arrow,
+    },
+  ];
   return (
     <div id="IntroPage">
       <div className="row container-fluid">
         {introList.map((intro) => (
-          <div className="intro--item">
-            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-              <img className="intro__img" src={intro.img} />
+          <>
+            <div className="intro--item">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <img className="intro__img" src={intro.img} />
+              </div>
+              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                <h4 className="intro__title">{intro.time}</h4>
+                <p className="intro__text">{intro.text}</p>
+              </div>
             </div>
-            <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-              <h4 className="intro__title">{intro.time}</h4>
-              <p className="intro__text">{intro.text}</p>
+            <div className="happy--item">
+              {listArrow.map((arrow) => (
+                <img className="happy__img" src={arrow.img} />
+              ))}
             </div>
-          </div>
+          </>
         ))}
       </div>
     </div>
