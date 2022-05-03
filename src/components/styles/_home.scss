@@ -60,11 +60,15 @@
       width: 150px;
       height: 40px;
       font-size: 20px;
-      font-weight: 500;
       border-radius: 24px;
       border: 1px solid #fff;
+      color: rgb(51, 51, 51);
       @include shadowBox();
-      background: linear-gradient(45deg, #bac4e9, #88f0f8);
+      background: linear-gradient(
+        45deg,
+        $first--gradient,
+        $secondary--gradient
+      );
       animation: background-btn linear 3s infinite;
     }
     button:hover {
@@ -73,13 +77,25 @@
   }
   @keyframes background-btn {
     25% {
-      background: linear-gradient(90deg, #bac4e9, #88f0f8);
+      background: linear-gradient(
+        90deg,
+        $first--gradient,
+        $secondary--gradient
+      );
     }
     50% {
-      background: linear-gradient(180deg, #bac4e9, #88f0f8);
+      background: linear-gradient(
+        180deg,
+        $first--gradient,
+        $secondary--gradient
+      );
     }
     100% {
-      background: linear-gradient(270deg, #bac4e9, #88f0f8);
+      background: linear-gradient(
+        270deg,
+        $first--gradient,
+        $secondary--gradient
+      );
     }
   }
 }
