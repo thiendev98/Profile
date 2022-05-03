@@ -400,8 +400,7 @@
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
   #HomePage .home__img {
-    width: 72%;
-    height: 360px;
+    width: 80%;
   }
   #HomePage .wapper h3 {
     margin-left: 20px;
@@ -453,8 +452,7 @@
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
   #HomePage .home__img {
-    width: 77%;
-    height: 320px;
+    width: 85%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -476,6 +474,7 @@
   }
   #HomePage .wapper h3 {
     font-size: 18px;
+    margin-left: 0;
   }
   #HomePage .wapper span {
     font-size: 21px;
@@ -567,8 +566,7 @@
             box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
   }
   #HomePage .home__img {
-    width: 74%;
-    height: 320px;
+    width: 90%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -589,6 +587,7 @@
     font-size: 1.5em;
   }
   #HomePage .wapper h3 {
+    margin-left: 0;
     font-size: 16px;
   }
   #HomePage .wapper span {
@@ -719,8 +718,7 @@
             flex-direction: column;
   }
   #HomePage .home__img {
-    width: 50%;
-    height: 300px;
+    width: 80%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -913,8 +911,7 @@
             flex-direction: column;
   }
   #HomePage .home__img {
-    width: 50%;
-    height: 300px;
+    width: 80%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -936,6 +933,7 @@
     font-size: 1.5em;
   }
   #HomePage .wapper h3 {
+    margin-left: 0;
     font-size: 18px;
   }
   #HomePage .wapper span {
@@ -1091,8 +1089,7 @@
             flex-direction: column;
   }
   #HomePage .home__img {
-    width: 60%;
-    height: 240px;
+    width: 80%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -1114,6 +1111,7 @@
     font-size: 1.5em;
   }
   #HomePage .wapper h3 {
+    margin-left: 0;
     font-size: 17px;
   }
   #HomePage .wapper span {
@@ -1195,8 +1193,7 @@
             flex-direction: column;
   }
   #HomePage .home__img {
-    width: 60%;
-    height: 200px;
+    width: 80%;
   }
   #HomePage .wapper {
     display: -webkit-box;
@@ -1218,6 +1215,7 @@
     font-size: 1.5em;
   }
   #HomePage .wapper h3 {
+    margin-left: 0;
     font-size: 14px;
   }
   #HomePage .wapper span {
@@ -1274,42 +1272,16 @@
 
 #HomePage .home--images .home__img {
   border-radius: 18px;
-  background-color: rgba(255, 255, 255, 0.6);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#HomePage .home--images .home__img--item {
-  width: 92%;
-  height: 92%;
-  background-image: url("../images/icons/thien.png");
-  opacity: 1;
-  -webkit-animation: imageFadeIn 12s linear infinite 3s;
-          animation: imageFadeIn 12s linear infinite 3s;
-  background-position: center;
-  background-size: cover;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-          box-shadow: 0px 5px 5px 1px rgba(50, 50, 50, 0.402);
-}
-
-#HomePage .wapper {
-  font-weight: 400;
 }
 
 #HomePage .wapper h2 {
   text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#HomePage .wapper h3 {
+  font-weight: 500;
 }
 
 #HomePage .wapper h3 span {

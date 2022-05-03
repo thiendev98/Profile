@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
+import reactjs from "./images/icons/reactjs.png";
 import "./styles/style.css";
 export default function Home({ onClick }) {
   const textRef = useRef();
@@ -28,9 +29,7 @@ export default function Home({ onClick }) {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 home--images">
-            <div className="home__img">
-              <div className="home__img--item"></div>
-            </div>
+            <img className="home__img" src={reactjs} />
           </div>
         </div>
       </div>
