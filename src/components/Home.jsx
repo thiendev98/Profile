@@ -9,7 +9,7 @@ export default function Home({ onClick }) {
       showCursor: false,
       backDelay: 2000,
       typeSpeed: 200,
-      strings: ["Sinh viên năm 3", "Frontend developer"],
+      strings: ["Sinh viên năm 4", "Frontend developer"],
     });
   }, []);
   return (
